@@ -1,0 +1,23 @@
+{
+  "name": "pbl",
+  "version": "1.0.0",
+  "main": "login.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node back/index.js",
+    "dev":"nodemon back/index.js",
+    "build":"npm install && cd front && npm install && npm run build"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

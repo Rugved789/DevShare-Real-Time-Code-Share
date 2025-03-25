@@ -1,0 +1,36 @@
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2>Please Login to Continue</h2>
+        <div class="tabs">
+            <button class="tab-btn active" id="sign-in-tab">Sign In</button>
+            <button class="tab-btn" id="sign-up-tab">Sign Up</button>
+        </div>
+        <form id="login-form">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" placeholder="Username or email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="btn-primary">Sign In</button>
+        </form>
+        <div class="social-login">
+            <p>or</p>
+            <button class="social-btn google">Google</button>
+            <button class="social-btn facebook">Facebook</button>
+            <button class="social-btn linkedin">LinkedIn</button>
+            <button class="social-btn github">GitHub</button>
+        </div>
+        <p>Why Create an Account? By creating this account, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Cookie Policy</a>.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>

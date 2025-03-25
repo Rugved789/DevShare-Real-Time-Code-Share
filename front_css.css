@@ -1,0 +1,318 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: url('images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header {
+    background: #170101;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e6d4d4;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust gap as needed */
+}
+
+.logo-icon {
+    height: 40px; /* Adjust for size */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e6d4d4;
+}
+
+.logo-container:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.nav a {
+    color: #e0e0e0;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav .btn-primary {
+    background: #2896cd;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #240750;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    color: #f5f7f7;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #f5f7f7;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    background: #e70606;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.features {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.features h2 {
+    color: #57A6A1;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.feature-item {
+    background: transparent;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+.About h2{
+    color: #57A6A1;
+}
+.About p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #57A6A1;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    margin: 0 0.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Make all text within modal content dark */
+.modal-content h2,
+.modal-content label,
+.modal-content p,
+.modal-content a,
+.modal-content button,
+.modal-content input,
+.modal-content span {
+    color: black;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-btn {
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background-color: rgb(51, 212, 121);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label,
+form input {
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(51, 212, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+
+.social-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-btn.google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-btn.linkedin {
+    background-color: #007bb5;
+    color: white;
+}
+
+.social-btn.github {
+    background-color: black;
+    color: white;
+}
+::-webkit-scrollbar{
+    display: none;
+}

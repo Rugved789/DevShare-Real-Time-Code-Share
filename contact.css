@@ -1,0 +1,230 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: #170101;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e6d4d4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust gap as needed */
+}
+
+.logo-icon {
+    height: 40px; /* Adjust for size */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e6d4d4;
+}
+
+.logo-container:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.nav a {
+    color: #e0e0e0;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #ff4b5c;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #57a6a1;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+/* Contact Form */
+.contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: rgba(71, 218, 196, 0.463);
+}
+
+/* Input Fields */
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.4s ease;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 75, 92, 0.5);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ddd;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+/* Submit Button */
+button {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    background: #e04350;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.footer a {
+    color: #57A6A1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff4b5c;
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    margin: 0 0.75rem;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .nav a {
+        margin: 0 0.5rem;
+    }
+}

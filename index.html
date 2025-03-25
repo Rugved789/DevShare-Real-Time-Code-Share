@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeshare Front Page</title>
+    <link rel="icon" href="images/website logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="front_css.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/website logo.jpg" alt="CodeShare Logo" class="logo-icon">
+                <h1 class="logo-text">CodeShare</h1>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="btn-primary" id="login-btn">Login</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Real-Time Collaborative Code Sharing</h1>
+                <p>Write, share, and collaborate on code with ease. Start your coding session now!</p>
+                <button class="btn-secondary">Start Coding</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/feature1.png" alt="Real-Time Collaboration" class="feature-icon">
+                    <h3>Real-Time Collaboration</h3>
+                    <p>Edit code with your team instantly in real time.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/feature2.png" alt="Multiple Language Support" class="feature-icon">
+                    <h3>Multiple Language Support</h3>
+                    <p>Supports syntax highlighting for various languages.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/feature3.jpg" alt="Easy Sharing" class="feature-icon">
+                    <h3>Easy Sharing</h3>
+                    <p>Generate a unique link to invite collaborators.</p>
+                </div>
+            </div>
+        </div>
+        <div class="About" id="about">
+            <h2>
+                About CodeShare
+            </h2>
+            <p>At CodeShare, we believe that coding is more powerful when it’s collaborative. Our platform is designed
+                to help developers from around the world write, share, and work on code together in real-time. Whether
+                you're working on a team project, pair programming, or conducting code interviews, CodeShare provides a
+                seamless and efficient environment for all your coding needs.
+            </p>
+        </div>
+    </section>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Please Login to Continue</h2>
+            <div class="tabs">
+                <button class="tab-btn active" id="sign-in-tab">Sign In</button>
+                <button class="tab-btn" id="sign-up-tab">Sign Up</button>
+            </div>
+            <form id="login-form">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" placeholder="Username or email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+            <div class="social-login">
+                <p>or</p>
+                <button class="social-btn google">Google</button>
+                <button class="social-btn facebook">Facebook</button>
+                <button class="social-btn linkedin">LinkedIn</button>
+                <button class="social-btn github">GitHub</button>
+            </div>
+            <p>Why Create an Account? By creating this account, you agree to our <a href="#">Privacy Policy</a> and <a
+                    href="#">Cookie Policy</a>.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Created by <a href="#">Rugved Gadge</a> and <a href="#">Aman Shrikhande</a>. For help and support, shoot
+                us an <a href="#">email</a>.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> &bull; <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
