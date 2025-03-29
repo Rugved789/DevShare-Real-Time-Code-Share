@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeshare Front Page</title>
+    <title>DevShare</title>
     <link rel="icon" href="images/website logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="front_css.css">
 
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="logo-container">
                 <img src="images/website logo.jpg" alt="CodeShare Logo" class="logo-icon">
-                <h1 class="logo-text">CodeShare</h1>
+                <h1 class="logo-text">DevShare</h1>
             </div>
             <nav class="nav">
                 <a href="#features">Features</a>
@@ -114,6 +114,15 @@
 
 
     <script src="login.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('.btn-secondary')?.addEventListener('click', function () {
+                window.location.href = "http://localhost:5173";
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
