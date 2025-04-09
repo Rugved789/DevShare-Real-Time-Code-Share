@@ -120,10 +120,20 @@ const port = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, "/front/dist")));
+// Serve static files in root (like index.html, login.html)
+app.use(express.static(__dirname));
 
-app.get("*", (req, res) => {
+// Serve React app at /react
+app.use("/react", express.static(path.join(__dirname, "front", "dist")));
+
+// For React Router support
+app.get("/react/*", (req, res) => {
   res.sendFile(path.join(__dirname, "front", "dist", "index.html"));
+});
+
+// Root route for main landing page
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 server.listen(port, () => {
