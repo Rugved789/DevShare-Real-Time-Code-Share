@@ -120,21 +120,11 @@ const port = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
 
-// Serve static files in root (like index.html, login.html)
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "/front/dist")));
 
-// Serve React app at /react
-app.use("/react", express.static(path.join(__dirname, "front", "dist")));
-
-// For React Router support
-app.get("/react/*", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "front", "dist", "index.html"));
-});
-
-// Root route for main landing page
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
+})
 
 server.listen(port, () => {
   console.log("Server is working on port 5000");
